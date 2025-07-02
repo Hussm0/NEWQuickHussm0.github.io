@@ -13,35 +13,214 @@
             font-family: 'Inter', sans-serif;
             background-color: #f8f9fa; /* Light grey background */
         }
+        /* Custom styles for markdown-like content within the page */
+        .policy-content h1 {
+            font-size: 2.5rem; /* text-4xl */
+            font-weight: 800; /* font-extrabold */
+            color: #1e3a8a; /* blue-800 */
+            margin-bottom: 1.5rem; /* mb-6 */
+            text-align: center;
+        }
+        .policy-content h2 {
+            font-size: 2rem; /* text-3xl */
+            font-weight: 700; /* font-bold */
+            color: #1e3a8a; /* blue-800 */
+            margin-top: 2.5rem; /* mt-10 */
+            margin-bottom: 1rem; /* mb-4 */
+        }
+        .policy-content h3 {
+            font-size: 1.5rem; /* text-2xl */
+            font-weight: 600; /* font-semibold */
+            color: #1e3a8a; /* blue-800 */
+            margin-top: 1.5rem; /* mt-6 */
+            margin-bottom: 0.75rem; /* mb-3 */
+        }
+        .policy-content p {
+            font-size: 1.125rem; /* text-lg */
+            color: #4b5563; /* gray-700 */
+            line-height: 1.75; /* leading-relaxed */
+            margin-bottom: 1rem; /* mb-4 */
+        }
+        .policy-content ul {
+            list-style-type: disc;
+            padding-left: 1.5rem; /* pl-6 */
+            margin-bottom: 1rem; /* mb-4 */
+        }
+        .policy-content ul li {
+            margin-bottom: 0.5rem; /* mb-2 */
+            color: #4b5563; /* gray-700 */
+        }
+        .policy-content strong {
+            font-weight: 700; /* font-bold */
+        }
+        .policy-content hr {
+            border-top: 1px solid #e5e7eb; /* gray-200 */
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+        }
     </style>
+    <!-- Favicon Links -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="icon" type="image/x-icon" href="favicon.ico"> <!-- Fallback for older browsers -->
 </head>
-<body class="min-h-screen flex flex-col items-center justify-center py-10 px-4 text-center">
+<body class="min-h-screen flex flex-col items-center py-10 px-4">
 
-    <div class="max-w-3xl w-full bg-white rounded-xl shadow-lg p-8 md:p-12 space-y-6">
+    <div class="max-w-4xl w-full bg-white rounded-xl shadow-lg p-8 md:p-12 space-y-8">
 
-        <h1 class="text-4xl md:text-5xl font-extrabold text-blue-700 mb-4">
-            Privacy Policy
-        </h1>
-
-        <p class="text-lg text-gray-700 leading-relaxed mb-4">
-            At QuickScript, your privacy and the security of your personal and health information are our highest priorities.
-        </p>
-
-        <div class="bg-blue-50 p-6 rounded-lg shadow-inner space-y-4 text-left">
-            <h2 class="text-2xl font-semibold text-blue-800">Our Commitment to Your Privacy</h2>
-            <p class="text-gray-600">
-                We are currently finalizing our comprehensive Privacy Policy to ensure full compliance with GDPR and UK healthcare regulations. This document will detail:
+        <header class="text-center mb-8">
+            <h1 class="text-4xl md:text-5xl font-extrabold text-blue-700 mb-4">
+                Privacy Policy
+            </h1>
+            <p class="text-lg text-gray-700 leading-relaxed">
+                Your privacy and the security of your information are our highest priorities.
             </p>
-            <ul class="list-disc list-inside text-gray-600 space-y-2 ml-4">
-                <li>What personal and health data we collect.</li>
-                <li>How and why we collect it.</li>
-                <li>How your data is stored, protected, and used.</li>
-                <li>With whom your data may be shared (e.g., prescribing pharmacists, payment processors).</li>
-                <li>Your rights regarding your data.</li>
+        </header>
+
+        <div class="policy-content text-left">
+            <h1>QuickScript Privacy Policy</h1>
+
+            <p><strong>Last Updated:</strong> July 2, 2025</p>
+
+            <p>This Privacy Policy describes how QuickScript ("we," "us," or "our") collects, uses, and protects your personal and health information when you use our online pharmacy consultation platform (the "Service"). Your privacy is of paramount importance to us, especially given the sensitive nature of the information you share.</p>
+
+            <p><strong>Important Note:</strong> This is a draft Privacy Policy for the Minimum Viable Product (MVP) of QuickScript. It is provided for informational purposes only and is **not legal advice**. Before launching QuickScript to the public or onboarding real users, this policy **MUST be reviewed, customized, and approved by a qualified UK solicitor specializing in healthcare law and GDPR.**</p>
+
+            <hr>
+
+            <h2>1. Who We Are</h2>
+            <p>QuickScript is an online platform that connects patients with independent prescribing pharmacists for virtual consultations and private prescription services for minor conditions.</p>
+
+            <h2>2. Information We Collect</h2>
+            <p>We collect various types of information to provide and improve our Service, including:</p>
+
+            <h3>a. Personal Identification Information (PII)</h3>
+            <ul>
+                <li><strong>Contact Details:</strong> Name, email address, phone number, current UK address (including postcode).</li>
+                <li><strong>Demographic Information:</strong> Date of birth, gender.</li>
+                <li><strong>Account Information:</strong> If applicable, username and password.</li>
             </ul>
-            <p class="text-gray-600 font-medium">
-                The full, legally binding Privacy Policy will be published here shortly. Your trust is essential to us.
-            </p>
+
+            <h3>b. Health Information (Special Category Data)</h3>
+            <p>This is highly sensitive data and is processed with the utmost care and strict confidentiality.</p>
+            <ul>
+                <li><strong>Symptoms and Medical History:</strong> Information you provide in consultation forms (e.g., description of condition, duration, severity, previous treatments, red flag symptoms).</li>
+                <li><strong>Allergies:</strong> Known allergies to medications, food, or other substances.</li>
+                <li><strong>Current Medications:</strong> List of any prescribed or over-the-counter medications you are currently taking.</li>
+                <li><strong>Relevant Medical Conditions:</strong> Any significant past or present health conditions.</li>
+                <li><strong>Pregnancy/Breastfeeding Status:</strong> Information relevant to prescribing decisions.</li>
+                <li><strong>Consultation Notes:</strong> Records made by the prescribing pharmacist during and after your consultation.</li>
+                <li><strong>Prescription Details:</strong> Information about any private prescriptions issued to you.</li>
+            </ul>
+
+            <h3>c. Payment Information</h3>
+            <p>We use Stripe, a third-party payment processor, to handle all payment transactions. We do not store your full credit card details on our servers. Stripe processes your payment information directly and securely. We receive confirmation of payment from Stripe.</p>
+
+            <h3>d. Technical and Usage Data</h3>
+            <ul>
+                <li><strong>Device Information:</strong> IP address, browser type, operating system, device identifiers.</li>
+                <li><strong>Usage Data:</strong> Pages visited, time spent on pages, referral sources, interactions with our forms and website.</li>
+                <li><strong>Cookies and Tracking Technologies:</strong> We use basic cookies to ensure the functionality of our website and to understand how our Service is used.</li>
+            </ul>
+
+            <h2>3. How We Collect Information</h2>
+            <p>We collect information directly from you when you:</p>
+            <ul>
+                <li>Fill out our online consultation forms (via Tally.so).</li>
+                <li>Make payments for our services (via Stripe).</li>
+                <li>Communicate with us via email or phone.</li>
+                <li>Use our website.</li>
+            </ul>
+
+            <h2>4. How We Use Your Information (Purposes and Legal Basis)</h2>
+            <p>We use your information for the following purposes and rely on specific legal bases under GDPR:</p>
+
+            <h3>a. To Provide the Service (Legal Basis: Contractual Necessity & Legitimate Interest)</h3>
+            <ul>
+                <li>To connect you with an independent prescribing pharmacist.</li>
+                <li>To enable pharmacists to assess your condition and provide advice or issue private prescriptions.</li>
+                <li>To process your payments.</li>
+                <li>To communicate with you regarding your consultation and prescription.</li>
+            </ul>
+
+            <h3>b. For Clinical Care and Safety (Legal Basis: Explicit Consent & Substantial Public Interest - Health or Social Care)</h3>
+            <ul>
+                <li>To enable pharmacists to make informed and safe clinical decisions.</li>
+                <li>To maintain accurate clinical records of your consultations and prescriptions.</li>
+                <li>To ensure continuity of care.</li>
+                <li>To manage referrals to other healthcare professionals if necessary.</li>
+            </ul>
+
+            <h3>c. For Internal Operations and Improvement (Legal Basis: Legitimate Interest)</h3>
+            <ul>
+                <li>To manage and track patient consultations and pharmacist activities (via Notion).</li>
+                <li>To improve and optimize our website and Service.</li>
+                <li>To monitor and analyze usage trends.</li>
+                <li>For internal auditing and quality assurance of our services.</li>
+            </ul>
+
+            <h3>d. For Legal and Regulatory Compliance (Legal Basis: Legal Obligation)</h3>
+            <ul>
+                <li>To comply with General Pharmaceutical Council (GPhC) standards for prescribing pharmacists.</li>
+                <li>To comply with data protection laws (GDPR).</li>
+                <li>To respond to lawful requests from public authorities.</li>
+                <li>To protect our rights, privacy, safety, or property, and/or that of our affiliates, you, or others.</li>
+            </ul>
+
+            <h2>5. How We Share Your Information</h2>
+            <p>We share your information only when necessary for the purposes outlined above, and always with appropriate safeguards:</p>
+
+            <ul>
+                <li><strong>With Independent Prescribing Pharmacists:</strong> Your personal and health information from your consultation form is shared with the GPhC-registered independent prescribing pharmacist assigned to your case to enable them to provide the consultation and prescribe safely.</li>
+                <li><strong>With Payment Processors:</strong> Your payment information is shared directly with Stripe to process your consultation fee.</li>
+                <li><strong>With E-Prescribing Services:</strong> If a prescription is issued, relevant patient and prescription details are shared with SignatureRx (or equivalent) to generate and send the electronic private prescription token to you.</li>
+                <li><strong>With Dispensing Pharmacies:</strong> Once you receive your electronic prescription token, you will share it with your chosen dispensing pharmacy to obtain your medication.</li>
+                <li><strong>With Service Providers:</strong> We use third-party services (e.g., Tally for forms, Notion for database management, Netlify for hosting, Google Workspace for email). These providers process data on our behalf and are contractually bound to protect your information.</li>
+                <li><strong>For Legal Reasons:</strong> We may disclose your information if required by law, court order, or to protect our legal rights.</li>
+            </ul>
+
+            <h2>6. Data Security</h2>
+            <p>We implement a variety of security measures to maintain the safety of your personal and health information. These measures include:</p>
+            <ul>
+                <li><strong>Encryption:</strong> Data is encrypted in transit (HTTPS/SSL) and at rest where possible.</li>
+                <li><strong>Access Controls:</strong> Strict access controls are in place to limit who can access sensitive data.</li>
+                <li><strong>Secure Platforms:</strong> We utilize reputable third-party platforms (Tally, Notion, Stripe, SignatureRx) that adhere to industry-standard security practices.</li>
+                <li><strong>Pharmacist Obligations:</strong> Our independent prescribing pharmacists are professionally obligated to maintain patient confidentiality and adhere to GPhC standards.</li>
+            </ul>
+            <p>However, no method of transmission over the Internet or method of electronic storage is 100% secure. While we strive to use commercially acceptable means to protect your information, we cannot guarantee its absolute security.</p>
+
+            <h2>7. Data Retention</h2>
+            <p>We retain your personal and health information for as long as necessary to fulfill the purposes for which it was collected, including for legal, accounting, or reporting requirements (e.g., GPhC record-keeping standards for prescribing, which may be several years).</p>
+
+            <h2>8. Your Data Protection Rights (GDPR)</h2>
+            <p>Under GDPR, you have certain rights regarding your personal data:</p>
+            <ul>
+                <li><strong>Right to Access:</strong> You can request a copy of your personal data we hold.</li>
+                <li><strong>Right to Rectification:</strong> You can request correction of inaccurate or incomplete data.</li>
+                <li><strong>Right to Erasure ("Right to be Forgotten"):</strong> You can request deletion of your data, subject to certain legal obligations (e.g., clinical record-keeping).</li>
+                <li><strong>Right to Restriction of Processing:</strong> You can request us to limit the way we use your data.</li>
+                <li><strong>Right to Data Portability:</strong> You can request to receive your data in a structured, commonly used, and machine-readable format.</li>
+                <li><strong>Right to Object:</strong> You can object to the processing of your data in certain circumstances.</li>
+                <li><strong>Right to Withdraw Consent:</strong> Where we rely on your consent, you can withdraw it at any time.</li>
+            </ul>
+            <p>To exercise any of these rights, please contact us using the details below. We will respond to your request in accordance with applicable data protection laws.</p>
+            <p>You also have the right to lodge a complaint with the Information Commissioner's Office (ICO), the UK supervisory authority for data protection issues.</p>
+
+            <h2>9. Third-Party Links</h2>
+            <p>Our Service may contain links to third-party websites or services (e.g., Tally, Stripe, SignatureRx, partner pharmacies). We are not responsible for the privacy practices or content of these third-party sites. We encourage you to review their privacy policies.</p>
+
+            <h2>10. Changes to This Privacy Policy</h2>
+            <p>We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Last Updated" date. You are advised to review this Privacy Policy periodically for any changes.</p>
+
+            <h2>11. Contact Us</h2>
+            <p>If you have any questions about this Privacy Policy or our data practices, please contact us:</p>
+
+            <ul>
+                <li><strong>By email:</strong> [your QuickScript business email address, e.g., info@quickscript.uk]</li>
+                <li><strong>By visiting this page on our website:</strong> [Link to a contact form if you create one, or just state "via our website"]</li>
+            </ul>
         </div>
 
         <a href="index.html" class="inline-block text-blue-600 hover:underline font-medium py-2 px-4 rounded-full transition-colors duration-300 mt-6">
@@ -50,6 +229,10 @@
 
         <footer class="text-center text-gray-500 text-sm mt-8 pt-6 border-t border-gray-200">
             &copy; 2025 QuickScript. All rights reserved.
+            <div class="mt-2">
+                <a href="privacy-policy.html" class="text-blue-600 hover:underline mx-2">Privacy Policy</a> |
+                <a href="terms-of-service.html" class="text-blue-600 hover:underline mx-2">Terms of Service</a>
+            </div>
         </footer>
 
     </div>
