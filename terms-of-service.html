@@ -13,35 +13,174 @@
             font-family: 'Inter', sans-serif;
             background-color: #f8f9fa; /* Light grey background */
         }
+        /* Custom styles for markdown-like content within the page */
+        .terms-content h1 {
+            font-size: 2.5rem; /* text-4xl */
+            font-weight: 800; /* font-extrabold */
+            color: #1e3a8a; /* blue-800 */
+            margin-bottom: 1.5rem; /* mb-6 */
+            text-align: center;
+        }
+        .terms-content h2 {
+            font-size: 2rem; /* text-3xl */
+            font-weight: 700; /* font-bold */
+            color: #1e3a8a; /* blue-800 */
+            margin-top: 2.5rem; /* mt-10 */
+            margin-bottom: 1rem; /* mb-4 */
+        }
+        .terms-content h3 {
+            font-size: 1.5rem; /* text-2xl */
+            font-weight: 600; /* font-semibold */
+            color: #1e3a8a; /* blue-800 */
+            margin-top: 1.5rem; /* mt-6 */
+            margin-bottom: 0.75rem; /* mb-3 */
+        }
+        .terms-content p {
+            font-size: 1.125rem; /* text-lg */
+            color: #4b5563; /* gray-700 */
+            line-height: 1.75; /* leading-relaxed */
+            margin-bottom: 1rem; /* mb-4 */
+        }
+        .terms-content ul {
+            list-style-type: disc;
+            padding-left: 1.5rem; /* pl-6 */
+            margin-bottom: 1rem; /* mb-4 */
+        }
+        .terms-content ul li {
+            margin-bottom: 0.5rem; /* mb-2 */
+            color: #4b5563; /* gray-700 */
+        }
+        .terms-content ol {
+            list-style-type: decimal;
+            padding-left: 1.5rem; /* pl-6 */
+            margin-bottom: 1rem; /* mb-4 */
+        }
+        .terms-content ol li {
+            margin-bottom: 0.5rem; /* mb-2 */
+            color: #4b5563; /* gray-700 */
+        }
+        .terms-content strong {
+            font-weight: 700; /* font-bold */
+        }
+        .terms-content hr {
+            border-top: 1px solid #e5e7eb; /* gray-200 */
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+        }
     </style>
+    <!-- Favicon Links -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="icon" type="image/x-icon" href="favicon.ico"> <!-- Fallback for older browsers -->
 </head>
-<body class="min-h-screen flex flex-col items-center justify-center py-10 px-4 text-center">
+<body class="min-h-screen flex flex-col items-center py-10 px-4">
 
-    <div class="max-w-3xl w-full bg-white rounded-xl shadow-lg p-8 md:p-12 space-y-6">
+    <div class="max-w-4xl w-full bg-white rounded-xl shadow-lg p-8 md:p-12 space-y-8">
 
-        <h1 class="text-4xl md:text-5xl font-extrabold text-blue-700 mb-4">
-            Terms of Service
-        </h1>
-
-        <p class="text-lg text-gray-700 leading-relaxed mb-4">
-            These Terms of Service govern your use of the QuickScript platform.
-        </p>
-
-        <div class="bg-blue-50 p-6 rounded-lg shadow-inner space-y-4 text-left">
-            <h2 class="text-2xl font-semibold text-blue-800">Important Information Regarding Our Service</h2>
-            <p class="text-gray-600">
-                We are currently developing our full Terms of Service to clearly define the relationship between QuickScript, our patients, and our independent prescribing pharmacists. This document will cover:
+        <header class="text-center mb-8">
+            <h1 class="text-4xl md:text-5xl font-extrabold text-blue-700 mb-4">
+                Terms of Service
+            </h1>
+            <p class="text-lg text-gray-700 leading-relaxed">
+                These Terms of Service govern your use of the QuickScript platform.
             </p>
-            <ul class="list-disc list-inside text-gray-600 space-y-2 ml-4">
-                <li>The scope and limitations of our online consultation service (e.g., not for emergencies).</li>
-                <li>Patient responsibilities, including providing accurate information.</li>
-                <li>Details regarding consultation fees, medication costs, and refund policies.</li>
-                <li>How our independent pharmacists provide care.</li>
-                <li>Disclaimers and limitations of liability.</li>
+        </header>
+
+        <div class="terms-content text-left">
+            <h1>QuickScript Terms of Service</h1>
+
+            <p><strong>Last Updated:</strong> July 2, 2025</p>
+
+            <p>Welcome to QuickScript. These Terms of Service ("Terms") govern your access to and use of the QuickScript website and online consultation services (the "Service"). By accessing or using the Service, you agree to be bound by these Terms. If you do not agree to these Terms, you may not use the Service.</p>
+
+            <p><strong>Important Note:</strong> This is a draft Terms of Service for the Minimum Viable Product (MVP) of QuickScript. It is provided for informational purposes only and is **not legal advice**. Before launching QuickScript to the public or onboarding real users, this policy **MUST be reviewed, customized, and approved by a qualified UK solicitor specializing in healthcare law and consumer contracts.**</p>
+
+            <hr>
+
+            <h2>1. Acceptance of Terms</h2>
+            <p>By using the QuickScript Service, you confirm that you are at least 18 years of age and legally capable of entering into a binding contract. You agree to comply with these Terms, our Privacy Policy, and all applicable laws and regulations.</p>
+
+            <h2>2. The QuickScript Service</h2>
+            <p>QuickScript provides an online platform that connects patients with independent prescribing pharmacists ("Pharmacists") for virtual consultations for minor medical conditions and, where clinically appropriate, the issuance of private prescriptions. We also offer an advice service.</p>
+
+            <h3>a. Nature of Service</h3>
+            <ul>
+                <li>QuickScript facilitates consultations; we do not provide direct medical care. The Pharmacists are independent professionals.</li>
+                <li>The Service is suitable only for **minor, non-emergency conditions**. It is not a substitute for emergency medical care. **If you are experiencing a medical emergency, call 999 immediately or go to your nearest A&E.**</li>
+                <li>Pharmacists may determine that your condition is not suitable for online consultation and may advise you to seek in-person medical attention from a GP or other healthcare professional.</li>
             </ul>
-            <p class="text-gray-600 font-medium">
-                The complete, legally binding Terms of Service will be available here soon. Your understanding and agreement are vital for using our service.
-            </p>
+
+            <h3>b. Independent Prescribing Pharmacists</h3>
+            <ul>
+                <li>All Pharmacists on the QuickScript platform are GPhC-registered Independent Prescribing Pharmacists, holding valid professional indemnity insurance.</li>
+                <li>Pharmacists exercise their independent clinical judgment. QuickScript does not influence their prescribing decisions.</li>
+            </ul>
+
+            <h2>3. Your Responsibilities</h2>
+            <p>As a user of the Service, you agree to:</p>
+            <ul>
+                <li>Provide accurate, complete, and truthful information about your symptoms, medical history, allergies, and current medications. Failure to do so may result in inappropriate treatment or harm, for which QuickScript and the Pharmacist are not liable.</li>
+                <li>Understand that the Service is for minor conditions and not for emergencies.</li>
+                <li>Comply with all instructions and advice given by the Pharmacist.</li>
+                <li>Pay the applicable consultation fees as outlined in Section 4.</li>
+                <li>Understand that the cost of medication is separate from the consultation fee and is paid directly to your chosen dispensing pharmacy.</li>
+            </ul>
+
+            <h2>4. Fees and Payment</h2>
+            <h3>a. Consultation Fees</h3>
+            <ul>
+                <li>The fees for our services are clearly displayed on our website (e.g., £35 for a prescribing consultation, £15 for an advice consultation).</li>
+                <li>All payments are processed securely through Stripe, our third-party payment processor. We do not store your full payment card details.</li>
+            </ul>
+
+            <h3>b. Prescription Upgrade Fee</h3>
+            <ul>
+                <li>If you initially use our advice service (£15) and the Pharmacist recommends a prescription, you will be offered the option to upgrade for an additional £25. The total cost for a prescribing consultation will then be £40.</li>
+            </ul>
+
+            <h3>c. Medication Costs</h3>
+            <ul>
+                <li>The consultation fee(s) **do not include the cost of any prescribed medication.** You are responsible for paying the full private cost of the medication directly to your chosen dispensing pharmacy.</li>
+            </ul>
+
+            <h3>d. Refunds</h3>
+            <ul>
+                <li>Consultation fees are generally non-refundable once the Pharmacist has begun reviewing your submission or providing advice.</li>
+                <li>No refunds will be issued if the Pharmacist determines your condition is unsuitable for online treatment and refers you to a GP or emergency services, as the consultation service has still been provided.</li>
+                <li>Specific refund requests will be reviewed on a case-by-case basis.</li>
+            </ul>
+
+            <h2>5. Prescriptions and Dispensing</h2>
+            <ul>
+                <li>All private prescriptions are issued electronically via a secure e-prescribing service (e.g., SignatureRx).</li>
+                <li>You will receive an electronic token or code which you can present to any UK pharmacy (physical or online) for dispensing.</li>
+                <li>QuickScript is not responsible for the availability or cost of medication at your chosen pharmacy.</li>
+            </ul>
+
+            <h2>6. Intellectual Property</h2>
+            <p>All content on the QuickScript website, including text, graphics, logos, and software, is the property of QuickScript or its licensors and is protected by intellectual property laws. You may not use, reproduce, or distribute any content from the Service without our express written permission.</p>
+
+            <h2>7. Limitation of Liability</h2>
+            <p>To the fullest extent permitted by law, QuickScript and its affiliates, directors, employees, and agents shall not be liable for any indirect, incidental, special, consequential, or punitive damages, or any loss of profits or revenues, whether incurred directly or indirectly, or any loss of data, use, goodwill, or other intangible losses, resulting from (a) your access to or use of or inability to access or use the Service; (b) any conduct or content of any third party on the Service; (c) any content obtained from the Service; and (d) unauthorized access, use, or alteration of your transmissions or content.</p>
+            <p>QuickScript facilitates the connection between patients and Pharmacists. While we verify Pharmacist credentials, we are not responsible for the direct clinical care provided by independent Pharmacists. Any claim arising from the clinical care provided by a Pharmacist should be directed to the individual Pharmacist and their professional indemnity insurer.</p>
+
+            <h2>8. Indemnification</h2>
+            <p>You agree to indemnify and hold harmless QuickScript and its affiliates, officers, agents, and employees from and against any claims, liabilities, damages, losses, and expenses, including, without limitation, reasonable legal and accounting fees, arising out of or in any way connected with your access to or use of the Service or your violation of these Terms.</p>
+
+            <h2>9. Governing Law and Jurisdiction</h2>
+            <p>These Terms shall be governed by and construed in accordance with the laws of England and Wales. Any disputes arising in connection with these Terms shall be subject to the exclusive jurisdiction of the courts of England and Wales.</p>
+
+            <h2>10. Changes to Terms</h2>
+            <p>We reserve the right to modify or replace these Terms at any time. If a revision is material, we will provide at least 30 days' notice prior to any new terms taking effect. By continuing to access or use our Service after those revisions become effective, you agree to be bound by the revised terms.</p>
+
+            <h2>11. Contact Us</h2>
+            <p>If you have any questions about these Terms, please contact us:</p>
+            <ul>
+                <li><strong>By email:</strong> contact@quickscript.uk</li>
+                <li><strong>By visiting this page on our website:</strong> via our website"</li>
+            </ul>
         </div>
 
         <a href="index.html" class="inline-block text-blue-600 hover:underline font-medium py-2 px-4 rounded-full transition-colors duration-300 mt-6">
@@ -50,6 +189,10 @@
 
         <footer class="text-center text-gray-500 text-sm mt-8 pt-6 border-t border-gray-200">
             &copy; 2025 QuickScript. All rights reserved.
+            <div class="mt-2">
+                <a href="privacy-policy.html" class="text-blue-600 hover:underline mx-2">Privacy Policy</a> |
+                <a href="terms-of-service.html" class="text-blue-600 hover:underline mx-2">Terms of Service</a>
+            </div>
         </footer>
 
     </div>
